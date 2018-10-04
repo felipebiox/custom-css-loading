@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="A simple customized loading spinner made with CSS">
+<meta name="author" content="felipebiox">
+
+<title>Custom css loading spinner</title>
+
+<!-- This file contains the spinner CSS with animation -->
+<link href="css/custom-spinner.css" rel="stylesheet">
+</head>
+<body>
+  <div id="simple-controller" style="width: 105px; margin: 20px auto 40px auto; text-align: center;">
+    <button class="btn" onclick="startLoadingSpinner()">Start</button>
+    <button class="btn" onclick="stopLoadingSpinner()">Stop</button>
+  </div>
+
+  <div id="random-container" style="width: 48px; margin: 20px auto 40px auto;">
+
+    <!-- THIS IS THE SPINNER -->
+    <div id="custom-loading-spinner" class="custom-loading-spinner">
+      <div class="custom-loading-spinner_inner">
+      </div>
+      <div class="custom-loading-spinner_minor-container">
+        <span class="custom-loading-spinner_minor-item custom-loading-spinner_minor-top"></span>
+        <span class="custom-loading-spinner_minor-item custom-loading-spinner_minor-right"></span>
+        <span class="custom-loading-spinner_minor-item custom-loading-spinner_minor-bottom"></span>
+      </div>
+    </div>
+    <!-- END SPINNER -->
+
+  </div>
+<script async="" type="text/javascript" charset="UTF-8" src="js/custom-spinner.js"></script>
+</body>
+</html>

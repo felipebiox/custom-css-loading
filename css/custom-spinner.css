@@ -1,0 +1,184 @@
+div.custom-loading-spinner {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color: rgb(129, 158, 200);
+    border-radius: 24px;
+    display: none;
+}
+div.custom-loading-spinner div.custom-loading-spinner_inner {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    background-color: rgb(255,255,255);
+    border-radius: 24px;
+}
+div.custom-loading-spinner div.custom-loading-spinner_minor-container {
+    position: relative;
+    width: 48px;
+    height: 48px;
+}
+div.custom-loading-spinner span.custom-loading-spinner_minor-item {
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: rgb(74, 104, 150);
+    border: 1px solid rgb(255,255,255);
+}
+div.custom-loading-spinner span.custom-loading-spinner_minor-item.custom-loading-spinner_minor-top {
+    top: 0px;
+    left: 10px;
+}
+div.custom-loading-spinner span.custom-loading-spinner_minor-item.custom-loading-spinner_minor-right {
+    top: 20px;
+    left: 40px;
+}
+div.custom-loading-spinner span.custom-loading-spinner_minor-item.custom-loading-spinner_minor-bottom {
+    top: 39px;
+    left: 10px;
+}
+
+/* ANIMATIONS */
+div.custom-loading-spinner.isActive {
+  display: block;
+
+  -webkit-animation: loadingspinner linear 1.2s infinite; /* Safari 4+ */
+  -moz-animation:    loadingspinner linear 1.2s infinite; /* Fx 5+ */
+  -o-animation:      loadingspinner linear 1.2s infinite; /* Opera 12+ */
+  animation:         loadingspinner linear 1.2s infinite; /* IE 10+, Fx 29+ */
+}
+@-webkit-keyframes loadingspinner {
+  0%   {
+          transform: rotate(0deg);
+        }
+  20%  {
+          transform: rotate(72deg);
+        }
+  40%  {
+          transform: rotate(144deg);
+       }
+  60%  {
+          transform: rotate(216deg);
+       }
+  80%  {
+          transform: rotate(288deg);
+       }
+  100% {
+          transform: rotate(360deg);
+       }
+}
+@-moz-keyframes loadingspinner {
+  0%   {
+          transform: rotate(0deg);
+        }
+  20%  {
+          transform: rotate(72deg);
+        }
+  40%  {
+          transform: rotate(144deg);
+       }
+  60%  {
+          transform: rotate(216deg);
+       }
+  80%  {
+          transform: rotate(288deg);
+       }
+  100% {
+          transform: rotate(360deg);
+       }
+}
+@-o-keyframes loadingspinner {
+  0%   {
+          transform: rotate(0deg);
+        }
+  20%  {
+          transform: rotate(72deg);
+        }
+  40%  {
+          transform: rotate(144deg);
+       }
+  60%  {
+          transform: rotate(216deg);
+       }
+  80%  {
+          transform: rotate(288deg);
+       }
+  100% {
+          transform: rotate(360deg);
+       }
+}
+@keyframes loadingspinner {
+  0%   {
+          transform: rotate(0deg);
+        }
+  20%  {
+          transform: rotate(72deg);
+        }
+  40%  {
+          transform: rotate(144deg);
+       }
+  60%  {
+          transform: rotate(216deg);
+       }
+  80%  {
+          transform: rotate(288deg);
+       }
+  100% {
+          transform: rotate(360deg);
+       }
+}
+
+div.custom-loading-spinner.isActive div.custom-loading-spinner_minor-container {
+  -webkit-animation: loadingspinnerminors linear 1.2s infinite; /* Safari 4+ */
+  -moz-animation:    loadingspinnerminors linear 1.2s infinite; /* Fx 5+ */
+  -o-animation:      loadingspinnerminors linear 1.2s infinite; /* Opera 12+ */
+  animation:         loadingspinnerminors linear 1.2s infinite; /* IE 10+, Fx 29+ */
+}
+@-webkit-keyframes loadingspinnerminors {
+  0%   {
+          transform: scale(1);
+        }
+  50%  {
+          transform: scale(1.5);
+       }
+  100% {
+          transform: scale(1);
+       }
+}
+@-moz-keyframes loadingspinnerminors {
+  0%   {
+          transform: scale(1);
+        }
+  50%  {
+          transform: scale(1.5);
+       }
+  100% {
+          transform: scale(1);
+       }
+}
+@-o-keyframes loadingspinnerminors {
+  0%   {
+          transform: scale(1);
+        }
+  50%  {
+          transform: scale(1.5);
+       }
+  100% {
+          transform: scale(1);
+       }
+}
+@keyframes loadingspinnerminors {
+  0%   {
+          transform: scale(1);
+        }
+  50%  {
+          transform: scale(1.5);
+       }
+  100% {
+          transform: scale(1);
+       }
+}
