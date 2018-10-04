@@ -9,7 +9,7 @@ function
         )
   }
 function
-  stopLoadingSpinner (t,e)
+  stopLoadingSpinner ()
   {
     document.getElementById('custom-loading-spinner')
       .classList
